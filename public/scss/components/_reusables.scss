@@ -7,6 +7,18 @@
         object-fit: cover;
     }
 }
+.btn-red {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    color: #fff;
+    background: $red_color;
+}
+.btn-orange {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    color: #fff;
+    background: $orange_color;
+}
 .bg-gradient {
     background: linear-gradient(
         to bottom right,

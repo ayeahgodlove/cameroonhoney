@@ -20,6 +20,20 @@ body {
   object-fit: cover;
 }
 
+.btn-red {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  color: #fff;
+  background: #E60023;
+}
+
+.btn-orange {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  color: #fff;
+  background: #F26C25;
+}
+
 .bg-gradient {
   background: linear-gradient(to bottom right, #431B0B, #FCB836);
 }
@@ -30,6 +44,11 @@ body {
 
 ._honey_shop_header {
   height: 100vh;
+}
+
+._banner-section {
+  padding: 4rem;
+  border-radius: 20% 10% 10% 10%/40% 20% 20% 20%;
 }
 
 /*# sourceMappingURL=main.css.map */
