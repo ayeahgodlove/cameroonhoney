@@ -1,0 +1,23 @@
+.image {
+    overflow: hidden; 
+
+    img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+}
+.bg-gradient {
+    background: linear-gradient(
+        to bottom right,
+        $brown_color,
+        $yellow_color
+    );
+}
+.bg-gradient-reverse {
+    background: linear-gradient(
+        to bottom right,
+        $yellow_color,
+        $brown_color
+    );
+}
