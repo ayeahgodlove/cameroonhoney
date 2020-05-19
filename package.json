@@ -1,0 +1,15 @@
+{
+  "name": "cameroonhoney",
+  "version": "1.0.0",
+  "description": "Website to sell cameroon honey products",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "cameroononlinehoneyshop"
+  },
+  "author": "Ayeah Godlove A.",
+  "license": "ISC"
+}
