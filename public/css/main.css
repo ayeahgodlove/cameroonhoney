@@ -35,6 +35,14 @@ body {
   background: #F26C25;
 }
 
+.bg-yellow {
+  background: #FCB836;
+}
+
+.bg-brown {
+  background: #431B0B;
+}
+
 .bg-gradient {
   background: linear-gradient(to bottom right, #431B0B, #FCB836);
 }
@@ -82,6 +90,7 @@ body {
 }
 ._store_products .card .card-body {
   width: 40%;
+  line-height: 1.7;
 }
 
 ._404-page {

@@ -7,6 +7,8 @@
         object-fit: cover;
     }
 }
+
+// buttons
 .btn-red {
     padding-left: 25px !important;
     padding-right: 25px !important;
@@ -19,6 +21,16 @@
     color: #fff;
     background: $orange_color;
 }
+
+// background colors
+.bg-yellow {
+    background: $yellow_color;
+}
+
+.bg-brown {
+    background: $brown_color;
+}
+// background gradients
 .bg-gradient {
     background: linear-gradient(
         to bottom right,
