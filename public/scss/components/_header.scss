@@ -1,3 +1,26 @@
 ._honey_shop_header {
     height: 100vh;
+    ._menu-bar {
+        li {
+            list-style: none; 
+            a {
+                color: $yellow_color;
+            }
+        }
+    }
+    ._cart-language {
+        li {
+            list-style: none; 
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    ._hero-section {
+        margin-top: 6rem;
+        ._welcome-text {
+            line-height: 1.5;
+        }
+    }
 }

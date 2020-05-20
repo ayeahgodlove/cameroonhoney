@@ -1,0 +1,18 @@
+._store_products {
+    position: relative;
+    top: -5em;
+    .card {
+        color: #fff;
+        height: 250px;
+        background: $brown_color;
+        border: 5px solid #2D1208;
+        .image {
+            width: 60%;
+            border-bottom-right-radius: 5px;
+            border-right-color: #2D1208;;
+        }
+        .card-body {
+            width: 40%;
+        }
+    }
+}

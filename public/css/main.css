@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  background: #F5F5F5;
 }
 
 .image {
@@ -45,10 +46,46 @@ body {
 ._honey_shop_header {
   height: 100vh;
 }
+._honey_shop_header ._menu-bar li {
+  list-style: none;
+}
+._honey_shop_header ._menu-bar li a {
+  color: #FCB836;
+}
+._honey_shop_header ._cart-language li {
+  list-style: none;
+}
+._honey_shop_header ._cart-language li a {
+  color: #fff;
+}
+._honey_shop_header ._hero-section {
+  margin-top: 6rem;
+}
+._honey_shop_header ._hero-section ._welcome-text {
+  line-height: 1.5;
+}
 
-._banner-section {
-  padding: 4rem;
-  border-radius: 20% 10% 10% 10%/40% 20% 20% 20%;
+._store_products {
+  position: relative;
+  top: -5em;
+}
+._store_products .card {
+  color: #fff;
+  height: 250px;
+  background: #431B0B;
+  border: 5px solid #2D1208;
+}
+._store_products .card .image {
+  width: 60%;
+  border-bottom-right-radius: 5px;
+  border-right-color: #2D1208;
+}
+._store_products .card .card-body {
+  width: 40%;
+}
+
+._404-page {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */
