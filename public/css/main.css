@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -16,6 +17,16 @@ body {
   overflow: hidden;
 }
 .image img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.image-alt {
+  overflow: hidden;
+  height: 300px;
+}
+.image-alt img {
   width: 100%;
   min-height: 100%;
   object-fit: cover;
@@ -78,38 +89,183 @@ a {
 }
 
 ._honey_shop_header {
-  height: 100vh;
+  height: 130vh;
 }
-._honey_shop_header ._menu-bar li {
+
+._menu-bar li {
   list-style: none;
 }
-._honey_shop_header ._menu-bar li a {
+._menu-bar li a {
   color: #FCB836;
 }
-._honey_shop_header ._menu-bar li.active {
+._menu-bar li.active {
   transition: all 300ms ease-in-out;
-}
-._honey_shop_header ._menu-bar li.active a {
   border-top: 3px solid #fff;
+}
+._menu-bar li.active a {
   color: #fff !important;
 }
-._honey_shop_header ._menu-bar li.active:hover {
+._menu-bar li.active:hover {
   color: #fff;
   transform: scale(1.05);
 }
-._honey_shop_header ._cart-language li {
+
+._cart-language li {
   list-style: none;
 }
-._honey_shop_header ._cart-language li a {
+._cart-language li a {
   color: #fff;
 }
-._honey_shop_header ._hero-section {
-  margin-top: 6rem;
+
+._hero-section {
+  z-index: -100;
+  margin-top: 4rem;
 }
-._honey_shop_header ._hero-section ._welcome-text {
+._hero-section ._welcome-text {
   line-height: 1.5;
 }
 
+._banner-section {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: url(../../img/path.png) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._banner-section .image {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 13%;
+  width: 300px;
+  height: 300px;
+}
+
+.cart-items {
+  position: relative;
+  top: -8px;
+  right: -2px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #F26C25;
+  border-radius: 20px;
+  padding: 0 0.2rem;
+  color: #fff;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: all 0.3s linear;
+  background: rgba(240, 157, 81, 0.5);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background: #F5F5F5;
+  z-index: 3;
+  background: #e7e2dd;
+  padding: 1.5rem;
+  transition: all 0.3s linear;
+  transform: translateX(100%);
+}
+
+.showCart {
+  transform: translateX(0);
+}
+
+.transparentBcg {
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+.close-cart {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+/*---------- Cart Item -------------------- */
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.cart-item img {
+  width: 75px;
+  height: 75px;
+}
+
+.cart-item h4 {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.cart-item h5 {
+  margin: 0.5rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.item-amount {
+  text-align: center;
+}
+
+.remove-item {
+  color: grey;
+  cursor: pointer;
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  color: #FCB836;
+  cursor: pointer;
+}
+
+/*---------- End of Cart Item -------------------- */
+.cart-footer {
+  margin-top: 2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/* --------------- End of Cart ---------------- */
 ._store_products {
   position: relative;
   top: -5em;
@@ -123,11 +279,55 @@ a {
 ._store_products .card .image {
   width: 60%;
   border-bottom-right-radius: 5px;
-  border-right-color: #2D1208;
+  border-right: 3px solid #2D1208;
 }
 ._store_products .card .card-body {
   width: 40%;
   line-height: 1.7;
+}
+
+._whats-in-stock .row .card {
+  position: relative;
+}
+._whats-in-stock .row .card .swipe {
+  position: absolute;
+  visibility: hidden;
+  top: 30%;
+  left: 0;
+  width: 100px;
+  background: #F26C25;
+  padding: 0.5rem;
+  transition: width 0.35s ease-in-out;
+}
+._whats-in-stock .row .card .swipe a {
+  text-decoration: none;
+  color: #2D1208;
+  font-weight: bold;
+}
+._whats-in-stock .row .card .swipe a:hover {
+  color: #fff;
+}
+._whats-in-stock .row .card .item-price {
+  top: 0;
+  right: 0;
+  width: 50%;
+  position: absolute;
+  background: #F26C25;
+  color: #fff;
+  padding: 0.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+._whats-in-stock .row .card:hover .swipe {
+  visibility: visible;
+  width: 100%;
+}
+._whats-in-stock .row .card .card-body {
+  padding: 0.5rem;
+  text-align: center;
+}
+._whats-in-stock .row .card .card-body .card-title {
+  font-weight: bold;
 }
 
 ._404-page {

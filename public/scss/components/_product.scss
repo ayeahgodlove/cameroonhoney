@@ -1,3 +1,4 @@
+// latest products
 ._store_products {
     position: relative;
     top: -5em;
@@ -9,7 +10,8 @@
         .image {
             width: 60%;
             border-bottom-right-radius: 5px;
-            border-right-color: #2D1208;;
+            // border-right-color: ;
+            border-right: 3px solid #2D1208;
         }
         .card-body {
             width: 40%;
@@ -17,3 +19,54 @@
         }
     }
 }
+
+// what's in stock?
+._whats-in-stock {
+    .row {
+        .card {
+            position: relative;
+            .swipe {
+                position: absolute;
+                visibility: hidden;
+                top: 30%;
+                left: 0;
+                width: 100px;
+                background: $orange_color;
+                padding: .5rem;
+                transition: width .35s ease-in-out;
+                a {
+                    text-decoration: none;
+                    color: #2D1208;
+                    font-weight: bold;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            .item-price {
+                top: 0;
+                right: 0;
+                width: 50%;
+                position: absolute;
+                background: $orange_color;
+                color: #fff;
+                padding: .1rem;
+                text-align: center;
+                font-weight: bold;
+            }
+            &:hover {
+                .swipe {
+                    visibility: visible;
+                    width: 100%;
+                }
+            }
+            .card-body {
+                padding: .5rem;
+                text-align: center;
+                .card-title {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+} 

@@ -8,6 +8,16 @@
     }
 }
 
+.image-alt {
+    overflow: hidden; 
+    height: 300px;
+    img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+}
+
 // buttons
 .btn-red {
     padding-left: 25px !important;

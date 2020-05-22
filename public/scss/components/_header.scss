@@ -1,38 +1,41 @@
 ._honey_shop_header {
-    height: 100vh;
-    ._menu-bar {
-        li {
-            list-style: none; 
-            a {
-                color: $yellow_color;
-            }
+    height: 130vh;
+}
 
-            &.active {
-                transition: all 300ms ease-in-out;
-                a {
-                    border-top: 3px solid #fff;
-                    color: #fff !important;
-                }
-                &:hover {
-                    color: #fff;
-                    transform: scale(1.05);
-                }
-            }
+// navbar sections
+._menu-bar {
+    li {
+        list-style: none; 
+        a {
+            color: $yellow_color;
         }
-    }
-    ._cart-language {
-        li {
-            list-style: none; 
+
+        &.active {
+            transition: all 300ms ease-in-out;
+            border-top: 3px solid #fff;
             a {
+                color: #fff !important;
+            }
+            &:hover {
                 color: #fff;
+                transform: scale(1.05);
             }
         }
     }
-
-    ._hero-section {
-        margin-top: 6rem;
-        ._welcome-text {
-            line-height: 1.5;
+}
+._cart-language {
+    li {
+        list-style: none; 
+        a {
+            color: #fff;
         }
+    }
+}
+
+._hero-section {
+    z-index: -100;
+    margin-top: 4rem;
+    ._welcome-text {
+        line-height: 1.5;
     }
 }
