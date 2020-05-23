@@ -361,6 +361,31 @@ a {
     top: -5em;
   }
 }
+.events {
+  transition: all 400ms ease-in-out;
+  position: relative;
+}
+.events .image {
+  height: 300px;
+}
+.events .card-body {
+  background: linear-gradient(200deg, #431B0B, #FCB836);
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  transition: all 400ms ease-in-out;
+}
+.events .card-body h3, .events .card-body p, .events .card-body a {
+  color: #FFFFFF;
+}
+.events .card-body:hover {
+  opacity: 1;
+  height: 100%;
+  cursor: pointer;
+}
+
 footer {
   padding: 2rem 0;
 }
