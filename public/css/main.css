@@ -22,14 +22,16 @@ body {
   object-fit: cover;
 }
 
-.image-alt {
-  overflow: hidden;
-  height: 300px;
+.text-brown {
+  color: #431B0B;
 }
-.image-alt img {
-  width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+
+.text-dark {
+  color: #333;
+}
+
+.text-yellow {
+  color: #FCB836;
 }
 
 .btn-red {
@@ -62,7 +64,7 @@ body {
 }
 
 .bg-gradient {
-  background: linear-gradient(to bottom right, #431B0B, #FCB836);
+  background: linear-gradient(0.3turn, #431B0B, 80%, #FCB836);
 }
 
 .bg-gradient-reverse {
@@ -89,7 +91,7 @@ a {
 }
 
 ._honey_shop_header {
-  height: 130vh;
+  height: 90vh;
 }
 
 ._menu-bar li {
@@ -119,14 +121,38 @@ a {
 
 ._hero-section {
   z-index: -100;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-._hero-section ._welcome-text {
-  line-height: 1.5;
+._hero-section ._welcome-text h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  ._hero-section ._welcome-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 991px) {
+  ._honey_shop_header {
+    height: 130vh;
+  }
+
+  ._hero-section {
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+  ._hero-section ._welcome-text h1 {
+    font-size: 42px;
+    font-weight: bolder;
+  }
+}
 ._banner-section {
-  height: 400px;
+  width: 100%;
+  height: 450px;
   position: relative;
   overflow: hidden;
   background: url(../../img/path.png) center;
@@ -141,10 +167,10 @@ a {
 ._banner-section .image {
   position: absolute;
   top: 40px;
-  right: 0;
-  left: 13%;
-  width: 300px;
-  height: 300px;
+  right: 10px;
+  left: 15%;
+  width: 350px;
+  height: 350px;
 }
 
 .cart-items {
@@ -268,7 +294,7 @@ a {
 /* --------------- End of Cart ---------------- */
 ._store_products {
   position: relative;
-  top: -5em;
+  top: -8em;
 }
 ._store_products .card {
   color: #fff;
@@ -330,6 +356,55 @@ a {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 991px) {
+  ._store_products {
+    top: -5em;
+  }
+}
+footer {
+  padding: 2rem 0;
+}
+footer ._honey_shop_footer .links li, footer ._honey_shop_footer .social_icons li {
+  list-style: none;
+  padding: 0.67rem;
+}
+footer ._honey_shop_footer .links li a, footer ._honey_shop_footer .social_icons li a {
+  padding: 0.2em 0.5rem;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 300ms ease;
+}
+footer ._honey_shop_footer .links li a:hover, footer ._honey_shop_footer .social_icons li a:hover {
+  background: #FCB836;
+  border-radius: 1000px;
+  transform: scale(1.2);
+  color: #431B0B !important;
+}
+footer ._honey_shop_footer .social_icons li {
+  padding: 0.6em;
+}
+footer ._honey_shop_footer .social_icons li a {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 0.2em 0.33em;
+  background: #FCB836;
+  color: #431B0B !important;
+}
+footer ._honey_shop_footer .social_icons li a i {
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 578px) {
+  footer .social_icons ul {
+    margin-left: 0 !important;
+  }
+  footer .social_icons ul li {
+    padding: 0.4rem;
+  }
+}
 ._404-page {
   height: 100vh;
 }

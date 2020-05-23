@@ -4,6 +4,7 @@
 @import "components/reusables";
 @import "components/site-defaults";
 @import "components/header";
+@import "components/navbar";
 @import "components/banner";
 @import "components/cart";
 @import "components/product";
@@ -11,4 +12,5 @@
 // pages
 @import "pages/store";
 @import "pages/about";
+@import "components/footer";
 @import "components/404-page";

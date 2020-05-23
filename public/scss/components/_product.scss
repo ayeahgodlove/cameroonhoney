@@ -1,7 +1,7 @@
 // latest products
 ._store_products {
     position: relative;
-    top: -5em;
+    top: -8em;
     .card {
         color: #fff;
         height: 250px;
@@ -70,3 +70,11 @@
         }
     }
 } 
+
+
+// beak points
+@media only screen and (min-width: 991px) {
+    ._store_products {
+        top: -5em;
+    }
+}

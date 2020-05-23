@@ -1,5 +1,5 @@
 ._honey_shop_header {
-    height: 130vh;
+    height: 90vh;
 }
 
 // navbar sections
@@ -34,8 +34,41 @@
 
 ._hero-section {
     z-index: -100;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     ._welcome-text {
-        line-height: 1.5;
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+// breakpoints
+// beak points
+@media only screen and (min-width: 768px) {
+    ._hero-section {
+        ._welcome-text {
+            h1 {
+                font-size: 32px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 991px) {
+    ._honey_shop_header {
+        height: 130vh;
+    }
+    ._hero-section {
+        margin-top: 4rem;
+        margin-bottom: 0;
+        ._welcome-text {
+            h1 {
+                font-size: 42px;
+                font-weight: bolder;
+            }
+        }
     }
 }

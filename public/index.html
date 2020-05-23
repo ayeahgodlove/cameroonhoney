@@ -11,7 +11,7 @@
     <!-- header -->
     <section class="bg-gradient _honey_shop_header">
         <header class="container">
-            <div class="navbar navbar-expand-lg px-0">
+            <div class="navbar navbar-expand-lg px-0 pt-3">
                 <a href="./index.html" class="navbar-brand">
                     CameroonOnlineHoneyShop
                 </a>
@@ -53,7 +53,16 @@
                             </span>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">English</a>
+                            <select class="form-control form-control-sm border-0">
+                                <option>
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        English
+                                    </a>
+                                </option>
+                                <option>
+                                    <a class="dropdown-item text-warning" href="#">French</a>
+                                </option>
+                              </select>
                         </li>
                     </ul>
                 </nav>
@@ -64,16 +73,16 @@
         <!-- welcome message and banner -->
         <div class="container _hero-section">
             <div class="row justify-content-between">
-                <div class="col-12 col-sm-12 col-md-6 text-white mt-md-5 pr-md-5 _welcome-text">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center text-md-center text-white mt-2 mt-lg-5 pr-md-5 _welcome-text">
                     <h1 class="text-uppercase">Natural Honey and honey products</h1>
-                    <p class="text-left">Your health is our priority, that's why we sell only Quality Hone Lorem ipsum dolor
+                    <p class="text-lg-left">Your health is our priority, that's why we sell only Quality Hone Lorem ipsum dolor
                          sit amet consectetur adipisicing elit.
                          Quidem aliquid eaque, voluptate vitae assumenda tempore tenetur a officia quo nemo.
                     </p>
                     <button class="btn px-3 btn-red">Join us</button>
                     <button class="btn px-3 btn-orange">Join us</button>
                 </div>
-                <div class="d-none d-md-block col-md-6 _banner-section">
+                <div class="d-none d-lg-block col-lg-6 _banner-section">
                     <!-- <div class="image-alt"> -->
                         <!-- <img src="img/path.png" class="img-fluid img-overlay" alt=""> -->
                         <div class="image">
@@ -88,7 +97,7 @@
     <!-- latest shop items -->
         <section class="container _store_products">
             <div class="row justify-content-between">
-                <div class="col-12 col-md-6 mb-2">
+                <div class="col-12 col-lg-6 mb-2">
                     <div class="card flex-row">
                         <section class="image">
                             <img src="img/item1.png" class="img-fluid" alt="">
@@ -104,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mb-2">
+                <div class="col-12 col-lg-6 mb-2">
                     <div class="card flex-row">
                         <section class="image">
                             <img src="img/item1.png" class="img-fluid" alt="">
@@ -120,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6 mb-2">
                     <div class="card flex-row">
                         <section class="image">
                             <img src="img/item1.png" class="img-fluid" alt="">
@@ -136,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="card flex-row">
                         <section class="image">
                             <img src="img/item1.png" class="img-fluid" alt="">
@@ -162,10 +171,16 @@
                 <h4 class="text-uppercase">WE ARE Fast, RELIABLe and Efficient</h4>
                 <p>We got you covered</p>
                 <form action="" method="get" class="form w-50 mx-auto">
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <input type="text" class="form-control col-8" placeholder="Enter a product name">
                         <button type="submit" class="btn bg-brown col-4 text-white">Search</button>
-                    </div>
+                    </div> -->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter a product name">
+                        <div class="input-group-append">
+                          <button class="btn bg-brown text-white" type="submit">Search</button>
+                        </div>
+                      </div>
                 </form>
             </div>
         </div>
@@ -370,9 +385,9 @@
       <!-- end of cart -->
 
     <!-- footer -->
-        <footer class="container-fluid mt-3 mt-lg-5 bg-brown _honey_shop_footer">
-            <div class="row align-items-center justify-content-center">
-                <ul class="col-12 nav d-flex align-items-center justify-content-center">
+        <footer class="container-fluid mt-3 mt-lg-5 bg-brown">
+            <div class="row align-items-center justify-content-center _honey_shop_footer">
+                <ul class="col-12 nav d-flex flex-column flex-sm-row align-items-center justify-content-center links">
                     <li class="nav-item">
                         <a href="" class="nav-link">Store</a>
                     </li>
@@ -393,24 +408,24 @@
                     </li>
                 </ul>
 
-                <ul class="col-12 nav d-flex align-items-center justify-content-center">
+                <ul class="col-12 nav d-flex align-items-center justify-content-center social_icons">
                     <li class="nav-item">
-                        <a href="" class="nav-link"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="" class="nav-link"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="" class="nav-link"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="" class="nav-link"><i class="fab fa-instagram"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link"><i class="fab fa-whatsapp fa-2x"></i></a>
+                        <a href="" class="nav-link"><i class="fab fa-whatsapp"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="" class="nav-link"><i class="fab fa-linkedin"></i></a>
                     </li>
                 </ul>
-                <div class="col-12 d-flex align-items-center justify-content-center">
+                <div class="col-12 d-flex align-items-center justify-content-center small text-white mt-4">
                     <p>HoneyMan &copy; 2020 | Privacy Policy</p>
                 </div>
             </div>

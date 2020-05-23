@@ -1,0 +1,62 @@
+footer {
+    padding: 2rem 0;
+    ._honey_shop_footer {
+        .links, .social_icons {
+
+            li {
+                list-style: none;
+                padding: .67rem;
+                a {  
+                    padding: .2em .5rem;
+                    display: grid;
+                    place-items: center;
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    transition: all 300ms ease;
+                    // padding: 7px 20px 7px 20px;
+
+                    &:hover {
+                        background: $yellow-color;
+                        border-radius: 1000px;
+                        transform: scale(1.2);
+                        color: $brown_color !important;
+                    }
+                }
+
+                
+            }
+
+        }
+    
+        .social_icons {
+            li { 
+                padding: .6em;
+                a {
+                    border-radius: 50%;
+                    height: 30px;
+                    width: 30px;
+                    padding: .2em .33em;
+                    background: $yellow-color;
+                    color: $brown_color !important;
+
+                    i {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    footer {
+        .social_icons {
+            ul {
+                margin-left: 0 !important;
+                li {
+                    padding: .4rem;
+                }
+            }
+        }
+    }
+}
