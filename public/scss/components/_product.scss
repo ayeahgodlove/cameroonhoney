@@ -1,17 +1,63 @@
 // latest products
 ._store_products {
     position: relative;
-    top: -8em;
+    top: -3em;
     .card {
         color: #fff;
-        height: 250px;
         background: $brown_color;
         border: 5px solid #2D1208;
+
+        .swipe {
+            position: absolute;
+            visibility: hidden;
+            // top: 80%;
+            bottom: 0%;
+            left: 0;
+            width: 100px;
+            background: $orange_color;
+            padding: .5rem;
+            transition: width .35s ease-in-out;
+            a {
+                text-decoration: none;
+                color: #2D1208;
+                font-weight: bold;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        .item-price, .item-name {
+            top: 0;
+            width: 50%;
+            position: absolute;
+            background: $brown_color;
+            color: #fff;
+            padding: .1rem;
+        }
+        .item-price {
+            right: 0;
+            // width: 45%;
+            text-align: right;
+            font-weight: bold;
+        }
+        .item-name {
+            left: 0;
+            // width: 50%;
+            text-align: left;
+            // font-weight: bold;
+        }
+        &:hover {
+            .swipe {
+                visibility: visible;
+                width: 100%;
+            }
+        }
         .image {
-            width: 60%;
-            border-bottom-right-radius: 5px;
+            // width: 60%;
+            height: 250px;
+            // border-bottom-right-radius: 5px;
             // border-right-color: ;
-            border-right: 3px solid #2D1208;
+            // border-right: 3px solid #2D1208;
         }
         .card-body {
             width: 40%;
@@ -73,6 +119,11 @@
 
 
 // beak points
+@media only screen and (min-width: 768px) {
+    ._store_products {
+        top: -5em;
+    }
+}
 @media only screen and (min-width: 991px) {
     ._store_products {
         top: -5em;

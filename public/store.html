@@ -8,63 +8,67 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="bg-gradient">
-        <header class="container">
-            <div class="navbar navbar-expand-lg px-0">
-                <a href="./index.html" class="navbar-brand">
-                    CameroonOnlineHoneyShop
-                </a>
-                
-                <!-- hambeuger icon -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- end of icon -->
+    <!-- header -->
+    <header class="bg-brown sticky-top">
+        <div class="container navbar navbar-expand-lg px-0 pt-3">
+            <a href="./index.html" class="navbar-brand">
+                CameroonOnlineHoneyShop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- navbar -->
+            <nav class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav mr-auto _menu-bar text-right">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./store.html" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./search.html" class="nav-link">Search</a>
+                    </li>
+                </ul>
 
-                <!-- navbar -->
-                <nav class="collapse navbar-collapse" id="navigation">
-                    <ul class="nav navbar-nav mr-auto _menu-bar text-right">
-                        <li class="nav-item">
-                            <a href="./index.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a href="./store.html" class="nav-link">Store</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./about.html" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./contact.html" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./blog.html" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./search.html" class="nav-link">Search</a>
-                        </li>
-                    </ul>
-
-                    <ul class="nav navbar-nav text-right _cart-language">
-                        <li class="nav-item cart-btn">
-                            <span class="nav-link nav-icon">
-                                <div class="cart-btn">
-                                    <i class="fas fa-cart-plus text-white"></i>
-                                    <span class="cart-items">0</span>
-                                    
-                                </div>
-                            </span>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">English</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- end of navbar -->
-            </div>
-        </header>
-    </div>
-    <!-- end of Navbar -->
+                <ul class="nav navbar-nav text-right _cart-language">
+                    <li class="nav-item cart-btn">
+                        <span class="nav-link nav-icon">
+                            <div class="cart-btn">
+                                <i class="fas fa-cart-plus text-white"></i>
+                                <span class="cart-items">0</span>
+                                
+                            </div>
+                        </span>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <select class="form-control form-control-sm border-0">
+                            <option>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    English
+                                </a>
+                            </option>
+                            <option>
+                                <a class="dropdown-item text-warning" href="#">French</a>
+                            </option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end of navbar -->
+        </div>
+    </header>
+    <!-- end of header -->
 
     <!-- WHAT IS IN STOCK -->
     <div class="container bg-white mt-3 mt-lg-5 px-5 _whats-in-stock">

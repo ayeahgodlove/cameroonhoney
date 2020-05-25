@@ -1,0 +1,27 @@
+
+._contact-us {
+    .card {
+        .card-body {
+            .display-4 {
+                font-size: 40px !important;
+            }
+
+            a {
+                color: $brown-color;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    ._contact-us {
+        .card {
+            .card-body {
+                .display-4 {
+                    font-size: 50px !important;
+                }
+            }
+        }
+    }
+}

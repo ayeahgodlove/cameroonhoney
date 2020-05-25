@@ -71,6 +71,20 @@ body {
   background: linear-gradient(to bottom right, #FCB836, #431B0B);
 }
 
+.slick-prev:before,
+.slick-next:before {
+  color: #431B0B;
+  z-index: 100%;
+}
+
+.slick-dots li button:before {
+  color: #431B0B;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #431B0B !important;
+}
+
 h1,
 h2,
 h3,
@@ -90,8 +104,12 @@ a {
   text-decoration: none;
 }
 
+header {
+  height: 70px;
+}
+
 ._honey_shop_header {
-  height: 90vh;
+  height: 60vh;
 }
 
 ._menu-bar li {
@@ -131,6 +149,10 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+  ._honey_shop_header {
+    height: 70vh;
+  }
+
   ._hero-section ._welcome-text h1 {
     font-size: 32px;
     font-weight: bold;
@@ -138,7 +160,7 @@ a {
 }
 @media only screen and (min-width: 991px) {
   ._honey_shop_header {
-    height: 130vh;
+    height: 120vh;
   }
 
   ._hero-section {
@@ -164,13 +186,18 @@ a {
   align-items: center;
   justify-content: center;
 }
-._banner-section .image {
+._banner-section .to_slick_it {
   position: absolute;
   top: 40px;
-  right: 10px;
+  right: 15%;
   left: 15%;
   width: 350px;
   height: 350px;
+  margin: 0 auto;
+}
+._banner-section .to_slick_it .image img {
+  width: 300px;
+  height: 300px;
 }
 
 .cart-items {
@@ -294,18 +321,54 @@ a {
 /* --------------- End of Cart ---------------- */
 ._store_products {
   position: relative;
-  top: -8em;
+  top: -3em;
 }
 ._store_products .card {
   color: #fff;
-  height: 250px;
   background: #431B0B;
   border: 5px solid #2D1208;
 }
+._store_products .card .swipe {
+  position: absolute;
+  visibility: hidden;
+  bottom: 0%;
+  left: 0;
+  width: 100px;
+  background: #F26C25;
+  padding: 0.5rem;
+  transition: width 0.35s ease-in-out;
+}
+._store_products .card .swipe a {
+  text-decoration: none;
+  color: #2D1208;
+  font-weight: bold;
+}
+._store_products .card .swipe a:hover {
+  color: #fff;
+}
+._store_products .card .item-price, ._store_products .card .item-name {
+  top: 0;
+  width: 50%;
+  position: absolute;
+  background: #431B0B;
+  color: #fff;
+  padding: 0.1rem;
+}
+._store_products .card .item-price {
+  right: 0;
+  text-align: right;
+  font-weight: bold;
+}
+._store_products .card .item-name {
+  left: 0;
+  text-align: left;
+}
+._store_products .card:hover .swipe {
+  visibility: visible;
+  width: 100%;
+}
 ._store_products .card .image {
-  width: 60%;
-  border-bottom-right-radius: 5px;
-  border-right: 3px solid #2D1208;
+  height: 250px;
 }
 ._store_products .card .card-body {
   width: 40%;
@@ -356,9 +419,26 @@ a {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 768px) {
+  ._store_products {
+    top: -5em;
+  }
+}
 @media only screen and (min-width: 991px) {
   ._store_products {
     top: -5em;
+  }
+}
+._contact-us .card .card-body .display-4 {
+  font-size: 40px !important;
+}
+._contact-us .card .card-body a {
+  color: #431B0B;
+}
+
+@media only screen and (min-width: 768px) {
+  ._contact-us .card .card-body .display-4 {
+    font-size: 50px !important;
   }
 }
 .events {

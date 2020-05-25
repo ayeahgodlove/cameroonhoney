@@ -58,3 +58,19 @@
         $brown_color
     );
 }
+
+
+// slick 
+.slick-prev:before,
+    .slick-next:before {
+    color: $brown_color;
+    z-index: 100%;
+}
+
+.slick-dots li button:before {
+    color: $brown_color;
+}
+
+.slick-dots li.slick-active button:before {
+    color:$brown_color!important;
+}
