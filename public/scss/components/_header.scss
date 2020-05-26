@@ -1,6 +1,26 @@
 // header 
 header {
-    height: 70px;
+    height: 40px;
+
+    .navbar {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+// hamberger icon
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    // background-color: $orange_color;
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
 }
 
 ._honey_shop_header {
@@ -53,6 +73,9 @@ header {
 // breakpoints
 // beak points
 @media only screen and (min-width: 768px) {
+    header {
+        height: 70px;
+    }
     ._honey_shop_header {
         height: 70vh
     }

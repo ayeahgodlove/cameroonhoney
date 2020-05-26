@@ -105,7 +105,25 @@ a {
 }
 
 header {
-  height: 70px;
+  height: 40px;
+}
+header .navbar {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.navbar-toggler {
+  width: 47px;
+  height: 34px;
+  border: none;
+}
+
+.navbar-toggler .line {
+  width: 100%;
+  float: left;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 5px;
 }
 
 ._honey_shop_header {
@@ -149,6 +167,10 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    height: 70px;
+  }
+
   ._honey_shop_header {
     height: 70vh;
   }
