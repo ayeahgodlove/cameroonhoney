@@ -127,7 +127,7 @@ header .navbar {
 }
 
 ._honey_shop_header {
-  height: 70vh;
+  height: calc(100% - 50px);
 }
 
 ._menu-bar li {
@@ -172,7 +172,7 @@ header .navbar {
   }
 
   ._honey_shop_header {
-    height: 70vh;
+    height: calc(100% - 70px);
   }
 
   ._hero-section ._welcome-text h1 {
@@ -182,7 +182,7 @@ header .navbar {
 }
 @media only screen and (min-width: 991px) {
   ._honey_shop_header {
-    height: 120vh;
+    height: 50vh;
   }
 
   ._hero-section {
@@ -343,7 +343,6 @@ header .navbar {
 /* --------------- End of Cart ---------------- */
 ._store_products {
   position: relative;
-  top: -3em;
 }
 ._store_products .card {
   color: #fff;
@@ -441,11 +440,6 @@ header .navbar {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) {
-  ._store_products {
-    top: -5em;
-  }
-}
 @media only screen and (min-width: 991px) {
   ._store_products {
     top: -5em;

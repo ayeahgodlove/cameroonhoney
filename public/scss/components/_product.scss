@@ -1,7 +1,7 @@
 // latest products
 ._store_products {
     position: relative;
-    top: -3em;
+    // top: 1em;
     .card {
         color: #fff;
         background: $brown_color;
@@ -121,7 +121,7 @@
 // beak points
 @media only screen and (min-width: 768px) {
     ._store_products {
-        top: -5em;
+        // top: -1em;
     }
 }
 @media only screen and (min-width: 991px) {

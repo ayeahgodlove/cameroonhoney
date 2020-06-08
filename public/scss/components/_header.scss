@@ -1,7 +1,6 @@
 // header 
 header {
     height: 40px;
-    // box-shadow: 1px 3px 8px $orange_color;
 
     .navbar {
         padding-top: 0;
@@ -13,7 +12,6 @@ header {
 .navbar-toggler{
     width: 47px;
     height: 34px;
-    // background-color: $orange_color;
     border:none;
 }
 .navbar-toggler .line{
@@ -25,7 +23,7 @@ header {
 }
 
 ._honey_shop_header {
-    height: 70vh;
+    height: calc(100% - 50px);
 }
 
 // navbar
@@ -82,7 +80,7 @@ header {
         height: 70px;
     }
     ._honey_shop_header {
-        height: 70vh
+        height: calc(100% - 70px);
     }
     ._hero-section {
         // height: 50vh;
@@ -96,7 +94,7 @@ header {
 }
 @media only screen and (min-width: 991px) {
     ._honey_shop_header {
-        height: 120vh
+        height: 50vh;
     }
     ._hero-section {
         margin-top: 4rem;
